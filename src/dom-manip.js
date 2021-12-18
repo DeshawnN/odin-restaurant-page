@@ -3,6 +3,7 @@ import * as Home from './home';
 import * as About from './about';
 import * as Reviews from './reviews';
 import * as Menu from './menu';
+import * as Contact from './contact';
 
 export function generateNavBar(element) {
     const navbar = document.createElement('div');
@@ -26,10 +27,15 @@ export function generateNavBar(element) {
     menuButton.textContent = "Menu";
     menuButton.addEventListener('click', generateView.bind(this, element, Menu));
 
+    const contactButton = document.createElement('button');
+    contactButton.textContent = "Contact Us";
+    contactButton.addEventListener('click', generateView.bind(this, element, Contact));
+
     navbar.appendChild(homeButton);
     navbar.appendChild(aboutButton);
     navbar.appendChild(menuButton);
     navbar.appendChild(reviewsButton);
+    navbar.appendChild(contactButton);
     element.appendChild(navbar);
 }
 

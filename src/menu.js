@@ -1,5 +1,4 @@
 import menu from './menu.json';
-import { clearContent, generateNavBar, generateMainContent } from './dom-manip';
 
 export function generateContent(element) {
     const mainBody = element.querySelector('.main-body');
