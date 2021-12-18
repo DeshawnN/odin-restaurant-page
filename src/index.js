@@ -3,6 +3,6 @@ import * as HOME from './home.js';
 
 (function() {
     const content = document.querySelector('.content');
-    HOME.generateMainPage(content);
+    HOME.generateView(content);
 })();
 

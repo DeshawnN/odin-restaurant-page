@@ -1,7 +1,7 @@
 import reviews from './reviews.json';
 import { clearContent, generateNavBar, generateMainContent } from './dom-manip';
 
-export function generateReviewContent(element) {
+export function generateContent(element) {
     const mainBody = element.querySelector('.main-body');
 
     for (const review of reviews) {
@@ -21,9 +21,9 @@ export function generateReviewContent(element) {
     }
 }
 
-export function generateReviewPage(element) {
+export function generateView(element) {
     clearContent(element);
     generateNavBar(element);
     generateMainContent(element);
-    generateReviewContent(element);
+    generateContent(element);
 }

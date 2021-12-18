@@ -1,6 +1,6 @@
 import { clearContent, generateNavBar, generateMainContent } from './dom-manip';
 
-export function generateHomeContent(element) {
+export function generateContent(element) {
     const mainBody = element.querySelector('.main-body');
 
     const paragraph = document.createElement('p');
@@ -26,9 +26,9 @@ export function generateHomeContent(element) {
     mainBody.appendChild(quote);
 }
 
-export function generateMainPage(element) {
+export function generateView(element) {
     clearContent(element);
     generateNavBar(element);
     generateMainContent(element);
-    generateHomeContent(element);
+    generateContent(element);
 }
