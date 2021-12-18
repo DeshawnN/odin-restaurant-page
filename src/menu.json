@@ -1,0 +1,18 @@
+[
+    {
+        "name": "Pizza Pie",
+        "price": 15
+    },
+    {
+        "name": "Supreme Pizza",
+        "price": 18
+    },
+    {
+        "name": "Taste of a Liar",
+        "price": 25.99
+    },
+    {
+        "name": "Purple Haze Brownies",
+        "price": 4.99
+    }
+]
