@@ -10,16 +10,16 @@ export function generateNavBar(element) {
     const homeButton = document.createElement('button');
     homeButton.textContent = "Home";
 
-    homeButton.addEventListener('click', Home.generateMainPage.bind(this, element));
+    homeButton.addEventListener('click', Home.generateView.bind(this, element));
 
     const aboutButton = document.createElement('button');
     aboutButton.textContent = "About";
 
-    aboutButton.addEventListener('click', About.generateAboutPage.bind(this, element));
+    aboutButton.addEventListener('click', About.generateView.bind(this, element));
 
     const reviewsButton = document.createElement('button');
     reviewsButton.textContent = "Reviews";
-    reviewsButton.addEventListener('click', Reviews.generateReviewPage.bind(this, element));
+    reviewsButton.addEventListener('click', Reviews.generateView.bind(this, element));
 
     navbar.appendChild(homeButton);
     navbar.appendChild(aboutButton);
