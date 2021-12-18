@@ -1,3 +1,8 @@
 import css from './style.css';
-import pizzaImage from './pizza.jpg';
-console.log("Test");
+import * as DOM from './dom-manip';
+
+(function() {
+    const content = document.querySelector('.content');
+    DOM.generateMainPage(content);
+})();
+
