@@ -25,10 +25,3 @@ export function generateContent(element) {
     mainBody.appendChild(paragraph);
     mainBody.appendChild(quote);
 }
-
-export function generateView(element) {
-    clearContent(element);
-    generateNavBar(element);
-    generateMainContent(element);
-    generateContent(element);
-}

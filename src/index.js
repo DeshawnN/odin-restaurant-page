@@ -1,8 +1,9 @@
 import css from './style.css';
-import * as HOME from './home.js';
+import * as Home from './home';
+import * as DOM from './dom-manip';
 
 (function() {
     const content = document.querySelector('.content');
-    HOME.generateView(content);
+    DOM.generateView(content, Home);
 })();
 

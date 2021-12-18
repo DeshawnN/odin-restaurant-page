@@ -8,10 +8,3 @@ export function generateContent(element) {
     
     mainBody.appendChild(paragraph);
 }
-
-export function generateView(element) {
-    clearContent(element);
-    generateNavBar(element);
-    generateMainContent(element);
-    generateContent(element);
-}

@@ -22,10 +22,3 @@ export function generateContent(element) {
     }
     mainBody.appendChild(menuDiv);
 }
-
-export function generateView(element) {
-    clearContent(element);
-    generateNavBar(element);
-    generateMainContent(element);
-    generateContent(element);
-}

@@ -20,10 +20,3 @@ export function generateContent(element) {
         mainBody.appendChild(div);
     }
 }
-
-export function generateView(element) {
-    clearContent(element);
-    generateNavBar(element);
-    generateMainContent(element);
-    generateContent(element);
-}
