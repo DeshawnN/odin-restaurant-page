@@ -1,8 +1,8 @@
 import css from './style.css';
-import * as DOM from './dom-manip';
+import * as HOME from './home.js';
 
 (function() {
     const content = document.querySelector('.content');
-    DOM.generateMainPage(content);
+    HOME.generateMainPage(content);
 })();
 
